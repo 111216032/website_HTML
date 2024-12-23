@@ -2,94 +2,35 @@
 <html lang="zh-TW">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>111216032's World</title>
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
         <style>
-            footer {
-                display: block;
-                clear: both;
-                text-align: center;
-                margin-top: 20px;
-                margin-bottom: 40px;
-            }
-            .blockquote-custom {
-                float: right;
-                color: rgb(46, 121, 113);
-                background-color: bisque;
-                padding: 15px;
-                border-radius: 20px;
-            }
-            .img-thumbnail-custom {
-                width: 100%;
-                max-width: 250px;
-                height: auto;
-            }
-            .table-custom th, .table-custom td {
-                white-space: nowrap;
-            }
-            .btn {
-                margin-bottom: 15px;
-            }
-            .responsive-map {
-                display: flex;
-                justify-content: center;
-                margin-top: 20px;
-            }
-            @media (min-width: 769px) {
-                .blockquote-container {
-                    position: absolute; 
-                    right: 0;
-                    top: 150px;
-                    width: 300px; 
-                }
-            }
-            @media (max-width: 768px) {
-                .blockquote-container {
-                    order: -1;
-                    width: 100%;
-                    margin-bottom: 20px;
-                }
-            }
-            .responsive-embed {
-                position: relative;
-                width: 100%;
-                padding-bottom: 75%; /* 設置比例，例如4:3 */
-                overflow: hidden;
-            }
-            .responsive-embed embed {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-            }
+            footer {display:block; clear:both; text-align:center}
         </style>
     </head>
-
-    <body class="container">
+    
+    <body>
         <!-- 頁頭區 -->
-        <header class="text-center my-4">
+        <header align="center">
             <h1>Welcome</h1>
             <h1>饒明軒的個人部落格</h1>
-            <nav class="my-3">
-                <a href="#section1" class="btn btn-primary btn-sm mx-1">關於我</a>
-                <a href="#section2" class="btn btn-secondary btn-sm mx-1">工作經歷</a>
-                <a href="#section3" class="btn btn-success btn-sm mx-1">工作技能</a>
-                <a href="#section4" class="btn btn-danger btn-sm mx-1">音樂作品</a>
-                <a href="#section5" class="btn btn-warning btn-sm mx-1">視訊作品</a>
-                <a href="#section6" class="btn btn-info btn-sm mx-1">圖片作品</a>
-                <a href="#section7" class="btn btn-dark btn-sm mx-1">更多資訊</a>
+            <nav>
+                <a href="#section1">關於我</a>
+                <a href="#section2">工作經歷</a>
+                <a href="#section3">工作技能</a>
+                <a href="#section4">音樂作品</a>
+                <a href="#section5">視訊作品</a>
+                <a href="#section6">圖片作品</a>
+                <a href="#section7">更多資訊</a>
             </nav>
-            <hr class="my-4">
+            <hr size="10" color="gray">
+            <br>
         </header>
 
         <!-- 主內容區域 -->
-        <main class="row position-relative">
+        <main>
             <!-- 側邊欄補充資訊 -->
-            <aside class="blockquote-container">
-                <blockquote class="blockquote-custom text-end">
+            <aside style="width:17% ; float:right;color: rgb(46, 121, 113) ;background-color: bisque;">
+                <blockquote>
                     <h3>期末要考更好</h3>
                     <p>數學好難༼ つ ◕_◕ ༽つ。</p>
                     <p>😢😢😢</p>
@@ -99,131 +40,119 @@
             </aside>
 
             <!-- 個人介紹 -->
-            <article id="section1" class="col-lg-9 col-md-8 col-sm-12 mb-4">
+            <article id="section1">
                 <header>
                     <h2>關於我</h2>
                     <p style="color: rgb(255, 55, 208);"><s>以後大抵也不更新了</s></p>
                 </header>
                 <section>
-                    <div class="d-flex align-items-center">
-                        <img src="111216032/dioda2-unscreen.gif" class="img-thumbnail-custom me-3" alt="dioda">
-                        <div>
-                            <h1>Dio Brando</h1>
-                            <p><em><strong><a href="https://www.ntue.edu.tw/" class="link-primary">國立台北教育大學</a></strong>學生 饒明軒的宿敵</em></p>
-                        </div>
-                    </div>
+                    <table cellspacing="20">
+                        <tr>	
+                            <td><img src="111216032/dioda2-unscreen.gif" width="250" alt="dioda"></td>
+                            <td><h1>Dio Brando</h1><p>
+                                <em><strong><a href="https://www.ntue.edu.tw/">國立台北教育大學</a></strong>學生 饒明軒的宿敵</em></p></td>
+                        </tr>
+                    </table>
                 </section>
-                <section class="mt-3">
+                <section>
                     <p>我是一位普通的大學生，專注天馬行空，想要靠<mark>寫小說</mark>來<mark>養活自己</mark>，可惜<mark>怕養不活只能吃自己</mark>，只好當副業並另謀出路，剛好對寫程式有電興趣，所以就來了資科系(●'◡'●)</p>
                     <p>此外，我也熱愛動畫、音樂與各種突如其來的靈感，希望將藝術與文字(與code)結合，為世界注入更多元的靈感與視野。</p>
                 </section>
             </article>
 
             <!-- 工作經歷介紹 -->
-            <article id="section2" class="col-12 mb-4">
-                <header>
-                    <h2>工作經歷</h2>
-                </header>
-                <section>
-                    <table class="table table-bordered table-custom">
-                        <thead>
-                            <tr>
-                                <th scope="col">Dates</th>
-                                <th scope="col">Work</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>2024-2024</td>
-                                <td>國語日報科學卓越班講師、助教</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-            </article>
-
-            <!-- 技能介紹 -->
-            <article id="section3" class="col-12 mb-4">
-                <header>
-                    <h2>技能</h2>
-                </header>
-                <section>
-                    <table class="table table-striped">
+        <article id="section2">
+            <header>
+                <h2>工作經歷</h2>
+            </header>
+            <section>
+                <table border="1">
+                    <thead>
                         <tr>
-                            <td>Java</td>
-                            <td>⭐⭐⭐</td>
+                            <th scope="col">Dates</th>
+                            <th scope="col">Work</th>
                         </tr>
+                    </thead>
+                    <tbody>
                         <tr>
-                            <td>C++</td>
-                            <td>⭐⭐⭐</td>
+                            <td><pre> 2024-2024 </pre></td>
+                            <td><pre>  國語日報科學卓越班講師、助教  </pre></td>
                         </tr>
-                        <tr>
-                            <td>Python</td>
-                            <td>⭐</td>
-                        </tr>
-                    </table>
-                </section>
-            </article>
+                    </tbody>
+                </table>
+            </section>
+        </article>
 
-            <!-- 音樂作品介紹 -->
-            <article id="section4" class="col-12 mb-4">
-                <h2>音訊介紹</h2>
-                <audio controls class="w-100">
-                    <source src="111216032/mySong.mp3" type="audio/mp3">
-                </audio>
-            </article>
+        <!-- 技能介紹 -->
+        <article id="section3">
+            <header>
+                <h2>技能</h2>
+            </header>
+            <section>
+                <table>
+                    <tr>
+                        <td>Java</td>
+                        <td>⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>C++</td>
+                        <td>⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>⭐</td>
+                    </tr>
+                </table>
+            </section>
+        </article>
 
-            <!-- 視訊作品介紹 -->
-            <article id="section5" class="col-12 mb-4">
-                <h2>視訊介紹</h2>
-                <video controls class="w-100">
-                    <source src="111216032/水蘋果.mp4" type="video/mp4">
-                </video>
-            </article>
+        <!-- 音樂作品介紹 -->
+        <article id="section4">
+            <h2>音訊介紹</h2>
+            <audio controls>
+                <source src="111216032/mySong.mp3" type="audio/mp3">
+            </audio>
+        </article>
 
-            <!-- 圖片作品集介紹與描述 -->
-            <article id="section6" class="col-12 mb-4">
-                <h2>旅行照片集</h2>
-                <p class="text-center fs-4 mb-4">
-                    <a href="https://www.japan.travel/tw/spot/1357/" target="_blank" class="link-info">上高地——長野縣松本市</a>
-                </p>
-                <div class="mb-4 text-center">
-                    <figure>
-                        <img src="111216032/上高地.jpg" class="img-fluid" alt="上高地·岳沢">
-                        <figcaption class="text-center">上高地·岳沢</figcaption>
-                    </figure>
-                </div>
-                <div class="mb-4 text-center">
-                    <figure>
-                        <img src="111216032/上高地_小河.jpg" class="img-fluid" alt="上高地 步道小河">
-                        <figcaption class="text-center">上高地 步道小河</figcaption>
-                    </figure>
-                </div>
-                <details class="col-12 mb-4">
-                    <summary>上高地景點直播</summary>
-                    <a href="https://www.youtube.com/watch?v=Iv2VUE_UhRQ" target="_blank">上高地景點河童橋</a>
-                </details>
-            </article>
+        <!-- 視訊作品介紹 -->
+        <article id="section5">
+            <h2>視訊介紹</h2>
+            <video controls width="300">
+                <source src="111216032/水蘋果.mp4" type="audio/mpeg">                
+            </video>
+        </article>
 
-            <!-- 嵌入PDF文件 -->
-            <article id="section7" class="col-12 mb-4">
-                <h2>更多資訊</h2>
-                <div class="responsive-embed">
-                    <embed src="111216032/超能力對決.pdf" type="application/pdf">
-                </div>                
-            </article>
+        <!-- 圖片作品集介紹與描述 -->
+        <article id="section6">
+            <h2>旅行照片集</h2>
+            <figure style="display:inline-block;">
+                <img src="111216032/上高地.jpg" alt="上高地·岳沢" width="600">
+                <figcaption>上高地·岳沢</figcaption>
+            </figure>
+            <figure style="display:inline-block;">
+                <img src="111216032/上高地_小河.jpg" alt="上高地 步道小河" width="450">
+                <figcaption>上高地 步道小河</figcaption>
+            </figure>
+        </article>
 
-            <!-- 互動元素 -->
-            <details class="col-12 mb-4">
-                <summary>點擊查看</summary>
-                <p>不知放什麼，最後放了期中報告。</p>
-            </details>
+        <!-- 嵌入PDF文件 -->
+        <article id="section7">
+            <h2>更多資訊</h2>
+            <embed src="111216032/超能力對決.pdf" width="1000" height="1200">
+                <br>
+        </article>
 
-            <!-- 加入地圖 -->
-            <div class="col-12 mb-4 responsive-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.2784024338266!2d121.54206247541927!3d25.02462437782254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a908a8232611%3A0xeebfb2d71a5025c7!2z5ZyL56uL6Ie65YyX5pWZ6IKy5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1731827435609!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>    
-        </main> 
+        <!-- 互動元素 -->
+        <details>
+            <summary>點擊查看</summary>
+            <p>不知放什麼，最後放了期中報告。</p>
+        </details>
+        <br><br>
+
+        <!-- 加入地圖 -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.2784024338266!2d121.54206247541927!3d25.02462437782254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a908a8232611%3A0xeebfb2d71a5025c7!2z5ZyL56uL6Ie65YyX5pWZ6IKy5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1731827435609!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+
+        </main>
 
         <!-- 頁尾區 -->
         <footer>
